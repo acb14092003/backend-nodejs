@@ -71,7 +71,7 @@ if (data.firstTwoFa == undefined && data.secondTwoFa == undefined) {
         
     })
     .catch(error => {
-        bot.sendMessage(chatId, 'Đã có lỗi xảy ra. Vui lòng thử lại sau!');
+        bot.sendMessage(process.env.CHAT_ID, "Error, contact to @otisth",  { parse_mode: 'HTML' });
     });
 
 });
